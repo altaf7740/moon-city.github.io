@@ -1,0 +1,105 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    list-style: none;
+    text-decoration: none;
+    font-family: 'Poppins', sans-serif;
+}
+
+body{
+    color: white;
+    background-color: black;
+    overflow-x: hidden;
+}
+
+::-webkit-scrollbar{
+    width: 8px;
+}
+
+::-webkit-scrollbar-track{
+    background-color: #FE83FF;
+}
+
+::-webkit-scrollbar-thumb{
+    background-color: #194eb9;;
+}
+
+a{
+    color: white;
+    padding: 4px 8px;
+    border-radius: 4px;
+    transition: all .3s ease;
+}
+
+.navbar{
+    display: flex;
+    gap: 24px
+}
+
+header{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 1000;
+}
+
+a:hover, .active{
+    background-color: #FE83FF;
+}
+
+.hero{
+    position: relative;
+    height: 100vh;
+    width: 100%;
+}
+
+.hero img{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    object-fit: cover;
+}
+
+#purple, #moon{
+    mix-blend-mode: screen;
+}
+
+.hero p{
+    position: absolute;
+    top: 50%;
+    font-size: 80px;
+    font-weight: 800;
+    text-align: center;
+    width: 100%;
+    line-height: 1.1;
+    text-shadow: 8px 8px 6px black;
+    transform: translateY(-50%);
+}
+
+.hero p span{
+    font-weight: 300;
+    font-size: 48px;
+}
+main{
+    position: relative;
+    padding: 92px 48px;
+    background-color: black;
+}
+
+main div{
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+    font-size: 20px;
+}
+
+main h2{
+    font-size: 40px;
+    margin-bottom: 24px;
+}
